@@ -2,6 +2,8 @@
 
 Simple app to let our users create bugreports og issue requests to our jira :-)
 
+[TODO list](TODO.md)
+
 # Libraries used this app
 
 - HttpClient by @smarek
