@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#313131</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#dc2121</color>
+    <color name="arrow_color">#FFFFFF</color>
+    <color name="navigation_drawer_color">#1c1c1c</color>
+    <color name="do_not_show_again_text">#000000</color>
+
+    <!-- UI refresh colors -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#5677fc</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#259b24</color>
+
+    <!-- App intro colors -->
+    <color name="slides_skip_color">#000000</color>
+    <color name="slides_done_color">#000000</color>
+    <color name="slides_text_color">#000000</color>
+    <color name="slides_progress_filled_color">#41000000</color>
+    <color name="slides_progress_not_filled_color">#14000000</color>
+    <color name="slide_1_background">#7f7f7f</color>
+    <color name="slide_2_background">#dd3d4f</color>
+    <color name="slide_3_background">#2f78c6</color>
+    <color name="slide_4_background">#22c265</color>
+
+    <!-- Card list colors -->
+    <color name="background_color_behind_theme_cards">#f2f2f2</color>
+    <color name="theme_card_info_background">#FFFFFF</color>
+    <color name="theme_card_image_tint">#34000000</color>
+    <color name="theme_card_name">#ffffff</color>
+    <color name="theme_card_name_shadow">#000000</color>
+
+    <!-- Theme info color -->
+    <color name="theme_info_background_color">#f2f2f2</color>
+    <color name="theme_info_top_image_tint">#20000000</color>
+    <color name="theme_info_bar">#313131</color>
+    <color name="theme_info_paid_or_free">#ffffff</color>
+    <color name="theme_info_theme_ready">#ffffff</color>
+    <color name="theme_info_playstore_button_background">#222222</color>
+    <color name="theme_info_playstore_button_text">#ffffff</color>
+    <color name="theme_info_contact_button_background">#222222</color>
+    <color name="theme_info_contact_button_text">#ffffff</color>
+
+</resources>

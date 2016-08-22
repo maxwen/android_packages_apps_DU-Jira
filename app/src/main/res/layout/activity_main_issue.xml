@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/main_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/jira_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_intro"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:text="@string/jira_username"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_username"
+                android:layout_below="@+id/textView_intro"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_username"
+                android:labelFor="@+id/editText_username"
+                android:layout_alignBaseline="@+id/textView_username"
+                android:layout_alignBottom="@+id/textView_username"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView_username" />
+
+            <TextView
+                android:text="@string/jira_password"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_password"
+                android:layout_below="@+id/editText_username"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText_password"
+                android:labelFor="@+id/editText_password"
+                android:layout_alignBaseline="@+id/textView_password"
+                android:layout_alignBottom="@+id/textView_password"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView_password" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_password"
+                android:layout_alignParentStart="true"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioBugreport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_bugreport" />
+
+                <RadioButton
+                    android:id="@+id/radioFeatureRequest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_featurerequest" />
+
+                <Button
+                    android:id="@+id/radioAttachmentbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/radio_attachmentbutton"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:text="@string/jira_bugreport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_bugreport"
+                android:layout_alignStart="@+id/textView_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:autoLink="web"
+                android:id="@+id/textView_url"
+                android:textAlignment="center"
+                android:layout_below="@+id/switch_bugreport"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/jira_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_url"
+                android:layout_alignStart="@+id/switch_bugreport"
+                android:id="@+id/textView_summary"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:ems="10"
+                android:id="@+id/editText_summary"
+                android:layout_below="@+id/textView_summary"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:text="@string/jira_issue_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_summary"
+                android:layout_alignStart="@+id/switch_bugreport"
+                android:id="@+id/textView_desc"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:scrollHorizontally="true"
+                android:ems="10"
+                android:id="@+id/editText_issue_desc"
+                android:gravity="top"
+                android:layout_below="@+id/textView_desc"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:foregroundGravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_check_white_24dp"
+        android:id="@+id/fab_report"
+        app:backgroundTint="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>

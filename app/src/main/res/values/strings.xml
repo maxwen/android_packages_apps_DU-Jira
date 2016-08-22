@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Issue Reporting</string>
+
+    <string name="jira_intro">Jira username and password</string>
+    <string name="jira_username">Username</string>
+    <string name="jira_password">Password</string>
+    <string name="jira_bugreport">Include short logcat and dmesg</string>
+    <string name="jira_summary">Summary</string>
+    <string name="jira_issue_desc">Describe the issue in detailt</string>
+    <string name="jira_report_button">Create issue</string>
+
+    <string name="radio_bugreport">Bug Report</string>
+    <string name="radio_featurerequest">Feature Request</string>
+    <string name="radio_attachmentbutton">Add attachment</string>
+    <string name="radio_attachmentbutton_added">Attachment added</string>
+
+    <string name="error_field_required">This field is required</string>
+    <string name="ok">OK</string>
+
+    <string name="permissions_not_granted">Permissions were not granted</string>
+    <string name="permision_available_storage">Storage Permissions have been granted</string>
+    <string name="permission_sdcard">This app needs access to your sdcard to get attachment file.</string>
+    <string name="permission_denied">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+</resources>
